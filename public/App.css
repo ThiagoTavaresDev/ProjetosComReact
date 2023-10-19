@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.globalDiv{
+    width: 1500px;
+    position: relative;
+}
+.divForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    position:absolute;
+    top: 200px;
+    right: 250px;
+}
+
+h4{
+    text-transform: uppercase;
+    color: hsla(278, 68%, 11%, 0.767);
+    font-size: 10px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+input{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
+    padding: 15px;
+    width: 100%;
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+}
+input::placeholder{
+    color: rgb(194, 194, 194);
+
+}
+input:hover{
+    border-color: hsl(249, 99%, 64%);
+
+}
+.firstDiv, .secondDiv, .englobedDiv{
+    margin: 20px;
+
+}
+.englobedDiv{
+    display: flex;
+    gap: 30px;
+}
+.englobedDiv .thirtyDiv input{
+    width: 70px;
+    margin-right: 20px;
+}
+button{
+    width: 89%;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(278, 68%, 11%);
+    color: aliceblue;
+    cursor: pointer;    
+}
+/*
+ALÉM DO FORM
+*/
+.containImage{
+ 
+    background-image: url(images/bg-main-desktop.png);
+    background-size: cover;
+    height: 800px;
+    width: 500px;
+  
+    
+}
+.CardFront{
+    background-image: url(images/bg-card-front.png);
+    background-size: cover;
+    padding: 30px;
+    padding-top: 130px;
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    color: aliceblue;
+}
+.CardFront div{
+    margin-bottom: 40px;
+
+}
+.CardFront span{
+    letter-spacing: 2px;
+    font-size: 26px;
+    font-weight: 100;
+    
+}
+.CardFront h5{
+   
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.CardBack{
+    background-image: url(images/bg-card-back.png);
+    position: absolute;
+    top: 400px;
+    left: 240px;
+    background-size: cover;
+    width: 447px;
+    height: 245px;
+}
